@@ -1,0 +1,73 @@
+body {
+    margin:0px;
+}
+.container {
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-image: url("images/surreal_4k.jpg");
+    background-position: center center;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.formulario  {
+    width:404px;
+    height:80px;
+    
+   
+    border-radius:10px;
+    box-shadow: 0px 0px 10px  rgba(0,0,0,0.274);
+    position: relative;
+    overflow: hidden;
+    margin-bottom:80px;
+}
+.desplacer{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: rgb(59, 248, 138);
+    z-index: 0;
+   
+    left: 0px;
+}
+.menuContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0 ,0, 0.185);
+    z-index: 3;
+    backdrop-filter: blur(10px);
+    border-radius:10px;
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+}
+.menuItem1,
+.menuItem2, 
+.menuItem3,  
+.menuItem4 {
+    width: 100px;
+    height: 100%;
+    border-right: 1px solid rgba(65, 65, 65);
+    background-position: center;
+    background-repeat: no repeat
+    
+
+
+}
+.border {
+    border-right: none;
+}
+.imgItem {
+    margin-top: 6PX;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes anim {
+    transition-timing-function: linear;
+}
+    
+    
