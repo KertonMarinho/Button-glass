@@ -1,2 +1,2 @@
 #Button glass
-![Screenshot](/images/screlsenshort.png);
+![Screenshot](/images/screenshort.png);
