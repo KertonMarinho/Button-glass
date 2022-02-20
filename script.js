@@ -9,11 +9,11 @@
             "background":color
         }).animate({
             left:position.left+ "px"
-        })
+        });
     });
-});*/
+});
 
-
+/*
 const ball = document.querySelector('.desplacer');
 const nav = document.querySelector('item');
 const home1 = document.querySelector('menuItem1');
@@ -25,38 +25,38 @@ const home4 = document.querySelector('menuItem4');
 
 function item(n) {
         if(n == 0 + 'px') {
-            
-            
             let t = n;
             ball.style.left = 0 +'px';
-           
-            
-           
-            
         }
         if (n == 100 + 'px') {
-            
-            
             let t = n;
             ball.style.left = 100 +'px';
-         
-           
-           
-            
         }
         if (n == 200 + 'px') {
             
             ball.style.left = 200+'px';
-           
-           
-            
-
         }
         if (n == 300 + 'px') {
             
             ball.style.left = 300+'px';
-            
-           
-            
         }
+         slide.addEventListener('click',slide);
+                glass.style.add.left= 100 + 'px';
+    }*/
+    var id = null;
+    function myMove() {
+      var elem = document.querySelector(".desplacer");   
+      var pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 10);
+      function frame() {
+        if (pos === 100) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          
+          elem.style.left = pos + 'px'; 
+        }
+      }
     }
+    
